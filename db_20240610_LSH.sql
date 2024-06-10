@@ -687,6 +687,14 @@ LOCK TABLES `cpg16x_votes` WRITE;
 UNLOCK TABLES;
 
 --
+-- Current Database: `kaiLdb`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `kaiLdb` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `kaiLdb`;
+
+--
 -- Current Database: `mysql`
 --
 
@@ -763,7 +771,7 @@ CREATE TABLE `db` (
 
 LOCK TABLES `db` WRITE;
 /*!40000 ALTER TABLE `db` DISABLE KEYS */;
-INSERT INTO `db` VALUES ('localhost','xedb','usersamadal','Y','Y','Y','Y','Y','Y','N','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','usersamadal','test_db','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('localhost','test_db','usersamadal','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','test_db','usermara','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','xedb','usersamadal','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','xedb','LSHAWS','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','xedb','kaiL','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');
+INSERT INTO `db` VALUES ('localhost','xedb','usersamadal','Y','Y','Y','Y','Y','Y','N','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','usersamadal','test_db','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('localhost','test_db','usersamadal','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','test_db','usermara','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','xedb','usersamadal','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','newxedb','LSHAWS','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y'),('%','kaiLdb','kaiL','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y','Y');
 /*!40000 ALTER TABLE `db` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -1403,6 +1411,14 @@ CREATE TABLE IF NOT EXISTS `slow_log` (
   `sql_text` mediumtext NOT NULL
 ) ENGINE=CSV DEFAULT CHARSET=utf8 COMMENT='Slow log';
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Current Database: `newxedb`
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ `newxedb` /*!40100 DEFAULT CHARACTER SET latin1 */;
+
+USE `newxedb`;
 
 --
 -- Current Database: `siteinfo`
@@ -3910,4 +3926,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2024-06-10 11:43:17
+-- Dump completed on 2024-06-10 11:58:34
